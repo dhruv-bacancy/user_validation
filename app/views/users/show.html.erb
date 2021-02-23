@@ -1,0 +1,24 @@
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %><br>
+  <strong>Age:</strong>
+  <%= @user.age %><br>
+  <strong>Gender:</strong>
+  <%= @user.gender %><br>
+  <strong>Phone number:</strong>
+  <%= @user.phone_number %><br>
+  <strong>Email:</strong>
+  <%= @user.email %><br>
+  <strong>Address:</strong>
+  <%= @user.address %><br>
+  <strong>Company Name:</strong>
+  <%= @user.company_name %><br>
+  <strong>Company Email:</strong>
+  <%= @user.company_email %><br>
+  <strong>Company Address:</strong>
+  <%= @user.company_address %><br>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to "Destroy", user_path(@user), method: :delete, data: { confirm: "Are you sure?" } %> |
+<%= link_to 'Back', users_path %>
